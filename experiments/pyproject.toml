@@ -1,0 +1,11 @@
+[project]
+name = "experiments"
+version = "0.1.0"
+description = "Experimental scripts using lean-graph-analyser"
+requires-python = ">=3.12"
+dependencies = [
+    "lean-graph-analyser",
+]
+
+[tool.uv.sources]
+lean-graph-analyser = { workspace = true }

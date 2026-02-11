@@ -1,0 +1,21 @@
+[project]
+name = "lean-graph-analyser-workspace"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[tool.uv.workspace]
+members = ["lean_graph_analyser", "experiments"]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+
+[tool.uv.sources]
+torch = { index = "pytorch-cpu" }
+torchvision = { index = "pytorch-cpu" }
+torchaudio = { index = "pytorch-cpu" }
+
+[tool.uv]
+index-strategy = "unsafe-best-match"
+constraint-dependencies = ["torch", "torchvision", "torchaudio"]
