@@ -2,6 +2,8 @@ import MyNNG.AdvAddition
 
 open MyNat
 
+namespace MyNat
+
 theorem le_refl (x : MyNat) : le x x := by
   use zero
   rw [add_zero]
@@ -140,3 +142,5 @@ theorem le_succ (a b : MyNat) : le a b → le a (succ b) := by
     use succ c
     rw [hc]
     rw [add_succ]
+
+end MyNat
