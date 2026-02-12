@@ -1,8 +1,3 @@
-import Mathlib.Tactic.ApplyAt
-import Mathlib.Tactic.NthRewrite
-import Mathlib.Tactic.Contrapose
-import Mathlib.Tactic.Use
-import Mathlib.Tactic.Tauto
 
 -- definition
 inductive MyNat where
@@ -17,7 +12,6 @@ instance : Inhabited MyNat where
 -- addition
 opaque add : MyNat → MyNat → MyNat
 
-@[simp]
 axiom add_zero (a : MyNat) : add a zero = a
 
 axiom add_succ (a d : MyNat) : add a (succ d) = succ (add a d)

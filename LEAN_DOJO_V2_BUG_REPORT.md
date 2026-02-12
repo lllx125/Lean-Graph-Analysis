@@ -640,3 +640,414 @@ AssertionError
 **Report Generated**: 2026-02-12
 **Project**: Lean-Graph-Analysis
 **Author**: Automated bug analysis based on systematic testing
+
+```bash
+(lean-graph-analyser-workspace) lilixing@Lixing:~/Lean-Graph-Analysis$ /home/lilixing/Lean-Graph-Analysis/.venv/bin/python /home/lilixing/Lean-Graph-Analysis/experiments/MyNNG/test_build_graph.py
+[2026-02-12 12:00:19,049] [WARNING] [real_accelerator.py:209:get_accelerator] Setting accelerator to CPU. If you have GPU or other accelerator, we were unable to detect it.
+2026-02-12 12:00:23.219 | DEBUG    | lean_dojo_v2.lean_dojo.data_extraction.lean:<module>:38 - Using GitHub personal access token for authentication
+Building dependency graph for MyNNG project at: /home/lilixing/Lean-Graph-Analysis/experiments/MyNNG/MyNNG
+======================================================================
+
+Step 1: Creating LeanGitRepo from local path...
+
+Step 2: Tracing the repository (this may take a while)...
+2026-02-12 12:00:24.112 | INFO     | lean_dojo_v2.lean_dojo.data_extraction.trace:get_traced_repo_path:216 - Tracing MyNNG_e9ea76d0e772d749e87d9865f2a34e18074d2f0a
+2026-02-12 12:00:24.114 | DEBUG    | lean_dojo_v2.lean_dojo.data_extraction.trace:get_traced_repo_path:218 - Working in the temporary directory /tmp/tmpzkgdedp7
+2026-02-12 12:00:24.120 | DEBUG    | lean_dojo_v2.lean_dojo.data_extraction.lean:clone_and_checkout:640 - Cloning MyNNG_e9ea76d0e772d749e87d9865f2a34e18074d2f0a
+2026-02-12 12:00:24.149 | DEBUG    | lean_dojo_v2.lean_dojo.data_extraction.trace:_trace:149 - Tracing MyNNG_e9ea76d0e772d749e87d9865f2a34e18074d2f0a
+info: mathlib: cloning https://github.com/leanprover-community/mathlib4
+info: mathlib: checking out revision '1ccd71f89cbbd82ae7d097723ce1722ca7b01c33'
+info: plausible: cloning https://github.com/leanprover-community/plausible
+info: plausible: checking out revision '2503bfb5e2d4d8202165f5bd2cc39e44a3be31c3'
+info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+info: LeanSearchClient: checking out revision '2ed4ba69b6127de8f5c2af83cccacd3c988b06bf'
+info: importGraph: cloning https://github.com/leanprover-community/import-graph
+info: importGraph: checking out revision '009064c21bad4d7f421f2901c5e817c8bf3468cb'
+info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+info: proofwidgets: checking out revision 'e8ef4bdd7a23c3a37170fbd3fa7ee07ef2a54c2d'
+info: aesop: cloning https://github.com/leanprover-community/aesop
+info: aesop: checking out revision '26e4c7c0e63eb3e6cce3cf7faba27b8526ea8349'
+info: Qq: cloning https://github.com/leanprover-community/quote4
+info: Qq: checking out revision '2781d8ad404303b2fe03710ac7db946ddfe3539f'
+info: batteries: cloning https://github.com/leanprover-community/batteries
+info: batteries: checking out revision '5c78955e8375f872c085514cb521216bac1bda17'
+info: Cli: cloning https://github.com/leanprover/lean4-cli
+info: Cli: checking out revision '1dae8b12f8ba27576ffe5ddee78bebf6458157b0'
+⢿ [23/62] Running Mathlib.Tactic.TacticAnalysis (+ 4 mor
+⣻ [23/62] Running Mathlib.Tactic.TacticAnalysis (+ 4 mor
+⣽ [23/62] Running Mathlib.Tactic.TacticAnalysis (+ 4 mor
+⣾ [23/62] Running Mathlib.Tactic.TacticAnalysis (+ 4 mor
+⣷ [23/62] Running Mathlib.Tactic.TacticAnalysis (+ 4 mor
+⣯ [23/62] Running Mathlib.Tactic.TacticAnalysis (+ 4 mor
+⣟ [23/62] Running Mathlib.Tactic.TacticAnalysis (+ 4 mor
+⡿ [23/62] Running Mathlib.Tactic.TacticAnalysis (+ 4 mor
+⣟ [85/124] Running Mathlib.Tactic.TacticAnalysis.Declara
+⡿ [85/124] Running Mathlib.Tactic.TacticAnalysis.Declara
+⢿ [85/124] Running Mathlib.Tactic.TacticAnalysis.Declara
+⣻ [85/124] Running Mathlib.Tactic.TacticAnalysis.Declara
+⣽ [85/124] Running Mathlib.Tactic.TacticAnalysis.Declara
+⣾ [85/124] Running Mathlib.Tactic.TacticAnalysis.Declara
+⣷ [85/124] Running Mathlib.Tactic.TacticAnalysis.Declara
+⣯ [85/124] Running Mathlib.Tactic.TacticAnalysis.Declara
+⣟ [85/124] Running Mathlib.Tactic.TacticAnalysis.Declara
+⡿ [85/124] Running Mathlib.Tactic.TacticAnalysis.Declara
+⢿ [85/124] Running Mathlib.Tactic.TacticAnalysis.Declara
+⣟ [96/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (+
+⡿ [96/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (+
+⢿ [96/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (+
+⣻ [98/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (+
+⣽ [98/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (+
+⣾ [99/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (+
+⣷ [99/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (+
+⣯ [99/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (+
+⣟ [99/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (+
+⡿ [100/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⣽ [102/124] Running Mathlib.Lean.Elab.Tactic.Basic (+ 3
+⣾ [102/124] Running Mathlib.Lean.Elab.Tactic.Basic (+ 3
+⣷ [102/124] Running Mathlib.Lean.Elab.Tactic.Basic (+ 3
+⣯ [103/124] Running Mathlib.Lean.Elab.Tactic.Basic (+ 3
+⣟ [103/124] Running Mathlib.Lean.Elab.Tactic.Basic (+ 3
+⡿ [103/124] Running Mathlib.Lean.Elab.Tactic.Basic (+ 3
+⣟ [106/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⡿ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⢿ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⣻ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⣽ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⣾ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⣷ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⣯ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⣟ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⡿ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⢿ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⣻ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⣽ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⣾ [108/124] Running Mathlib.Tactic.Simproc.ExistsAndEq (
+⚠ [117/124] Built MyNNG.Implication
+warning: MyNNG/Implication.lean:5:63: unused variable `h2`
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: MyNNG/Implication.lean:5:0: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: MyNNG/Implication.lean:13:0: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+warning: MyNNG/Implication.lean:51:0: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+⚠ [120/124] Built MyNNG.Power
+warning: MyNNG/Power.lean:70:0: This line exceeds the 100 character limit, please shorten it!
+
+Note: This linter can be disabled with `set_option linter.style.longLine false`
+Build completed successfully (124 jobs).
+2026-02-12 12:02:11.613 | DEBUG    | lean_dojo_v2.lean_dojo.data_extraction.trace:_modify_dependency_files:34 - Modifying dependency files to replace 'import all' with 'public import all'
+  0%|                          | 0/2235 [00:00<?, ?it/s]warning: batteries: repository '/tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries' has local changes
+ExtractData.lean:13:18: warning: `String.Pos` has been deprecated: Use `String.Pos.Raw` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.Pos` to `String.Pos.Raw x`).
+ExtractData.lean:31:7: warning: `String.Pos` has been deprecated: Use `String.Pos.Raw` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.Pos` to `String.Pos.Raw x`).
+ExtractData.lean:32:10: warning: `String.Pos` has been deprecated: Use `String.Pos.Raw` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.Pos` to `String.Pos.Raw x`).
+Extracting data at /tmp/tmpzkgdedp7/MyNNG
+  1%|▏              | 20/2235 [00:55<1:08:00,  1.84s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Control/OptionT.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Control/LawfulMonadState.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Control/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Control/AlternativeMonad.lean
+  1%|▏                | 29/2235 [01:05<53:00,  1.44s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Lean/LawfulMonadLift.lean
+  2%|▎                | 34/2235 [01:10<47:12,  1.29s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Lean/Meta/Simp.lean
+  2%|▎                | 40/2235 [01:15<40:51,  1.12s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Lean/EStateM.lean
+  3%|▍                | 60/2235 [01:30<31:14,  1.16it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Tactic/Lint/Simp.lean
+  4%|▋              | 97/2235 [02:25<1:03:00,  1.77s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Data/ByteSlice.lean
+  7%|█             | 165/2235 [04:10<1:06:23,  1.92s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Data/Nat/Digits.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Data/String/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/Data/Array/Monadic.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/Batteries/WF.lean
+ 21%|███▍            | 477/2235 [09:45<32:11,  1.10s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Lean/Elab/Util.lean
+ 44%|███████         | 979/2235 [17:20<15:28,  1.35it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Lean/Parser/Extra.lean
+ 48%|███████▏       | 1064/2235 [18:35<15:28,  1.26it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Lean/Compiler/LCNF/Specialize.lean
+ 52%|███████▊       | 1156/2235 [19:54<14:42,  1.22it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Omega/Coeffs.lean
+ 52%|███████▊       | 1160/2235 [19:59<16:06,  1.11it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Control/Lawful/Instances.lean
+ 52%|███████▊       | 1166/2235 [20:04<15:41,  1.14it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Control/Lawful/MonadLift/Instances.lean
+ 53%|███████▉       | 1186/2235 [20:19<13:32,  1.29it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Meta/Defs.lean
+ 54%|████████       | 1208/2235 [20:34<11:54,  1.44it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Slice/Array/Iterator.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Slice/Array/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Slice/Lemmas.lean
+ 54%|████████▏      | 1216/2235 [20:39<11:25,  1.49it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Iterators/Lemmas/Consumers/Monadic/Loop.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Iterators/Lemmas/Consumers/Monadic/Collect.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Iterators/Lemmas/Consumers/Loop.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Iterators/Lemmas/Consumers/Collect.lean
+ 55%|████████▏      | 1220/2235 [20:44<13:12,  1.28it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Iterators/Lemmas/Combinators/ULift.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Iterators/Lemmas/Combinators/Monadic/ULift.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Iterators/Lemmas/Combinators/Monadic/FilterMap.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Iterators/Lemmas/Combinators/Monadic/FlatMap.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Iterators/Lemmas/Combinators/Monadic/Attach.lean
+ 55%|████████▎      | 1235/2235 [21:04<16:31,  1.01it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Iterators/Lemmas/Combinators/FlatMap.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Iterators/Lemmas/Combinators/Attach.lean
+ 57%|████████▌      | 1285/2235 [21:49<16:48,  1.06s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Range/Polymorphic/SInt.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Range/Polymorphic/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Range/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Sum/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/BitVec/Folds.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/BitVec/Bootstrap.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/BitVec/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/BitVec/Bitblast.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Nat/Bitwise/Lemmas.lean
+ 58%|████████▋      | 1298/2235 [22:04<16:37,  1.06s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Nat/Compare.lean
+ 58%|████████▋      | 1302/2235 [22:09<17:19,  1.11s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Nat/Lemmas.lean
+ 59%|████████▊      | 1308/2235 [22:14<15:38,  1.01s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/SInt/Bitwise.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/SInt/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Option/List.lean
+ 59%|████████▊      | 1311/2235 [22:19<17:40,  1.15s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Option/Array.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Option/Lemmas.lean
+ 59%|████████▊      | 1316/2235 [22:24<16:50,  1.10s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Option/Monadic.lean
+ 59%|████████▊      | 1321/2235 [22:29<16:15,  1.07s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/String/Extra.lean
+ 60%|█████████      | 1346/2235 [23:04<20:47,  1.40s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/ByteArray/Basic.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/OfFn.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Subarray/Split.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Perm.lean
+ 60%|█████████      | 1348/2235 [23:09<23:53,  1.62s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Count.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Bootstrap.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Lex/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Find.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Erase.lean
+ 60%|█████████      | 1352/2235 [23:14<21:52,  1.49s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/DecidableEq.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Attach.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Zip.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Basic.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Lemmas.lean
+ 61%|█████████      | 1355/2235 [23:19<22:31,  1.54s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/MapIdx.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/TakeDrop.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Range.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/BasicAux.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Array/Monadic.lean
+ 61%|█████████      | 1356/2235 [23:24<28:24,  1.94s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/List/Perm.lean
+ 61%|█████████▏     | 1374/2235 [23:49<20:16,  1.41s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/List/Sort/Impl.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/List/Sort/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/List/Find.lean
+ 62%|█████████▎     | 1380/2235 [23:59<21:50,  1.53s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/List/Attach.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/List/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/List/FinRange.lean
+ 62%|█████████▎     | 1382/2235 [24:04<24:38,  1.73s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/List/TakeDrop.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/List/Monadic.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/List/ToArray.lean
+ 62%|█████████▎     | 1385/2235 [24:09<24:16,  1.71s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Int/Bitwise/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Int/Linear.lean
+ 62%|█████████▎     | 1390/2235 [24:14<19:53,  1.41s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Int/Compare.lean
+ 63%|█████████▍     | 1412/2235 [24:44<17:37,  1.28s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Char/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/UInt/Bitwise.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/UInt/Lemmas.lean
+ 64%|█████████▌     | 1423/2235 [24:54<13:42,  1.01s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Order/Lemmas.lean
+ 64%|█████████▋     | 1436/2235 [25:04<11:31,  1.16it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Vector/Lex.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Vector/OfFn.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Vector/Perm.lean
+ 64%|█████████▋     | 1437/2235 [25:09<15:18,  1.15s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Vector/Count.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Vector/Find.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Vector/Attach.lean
+ 64%|█████████▋     | 1440/2235 [25:14<16:48,  1.27s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Vector/Zip.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Vector/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Vector/MapIdx.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Vector/Range.lean
+ 65%|█████████▋     | 1444/2235 [25:19<16:39,  1.26s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Vector/Monadic.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Data/Dyadic/Round.lean
+ 65%|█████████▊     | 1457/2235 [25:34<14:54,  1.15s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/GrindInstances/Ring/UInt.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/GrindInstances/Ring/BitVec.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/GrindInstances/Ring/Fin.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/GrindInstances/Ring/SInt.lean
+ 65%|█████████▊     | 1461/2235 [25:39<15:12,  1.18s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/GrindInstances/ToInt.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/SizeOfLemmas.lean
+ 66%|█████████▉     | 1472/2235 [25:49<12:54,  1.01s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Grind/Ring/CommSolver.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Grind/Ring/Envelope.lean
+ 66%|█████████▉     | 1483/2235 [26:04<16:29,  1.32s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Grind/Module/Envelope.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Grind/Module/Basic.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Grind/Ordered/Linarith.lean
+ 67%|█████████▉     | 1487/2235 [26:09<16:09,  1.30s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Grind/ToIntLemmas.lean
+ 67%|██████████     | 1502/2235 [26:24<13:15,  1.09s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Internal/Order/Basic.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Init/Internal/Order/Lemmas.lean
+ 68%|██████████▎    | 1530/2235 [26:49<10:42,  1.10it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/lake/Lake/Build/Target/Fetch.lean
+ 69%|██████████▍    | 1547/2235 [27:04<10:12,  1.12it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/lake/Lake/Build/Data.lean
+ 70%|██████████▌    | 1565/2235 [27:24<11:15,  1.01s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/lake/Lake/Util/Url.lean
+ 71%|██████████▌    | 1578/2235 [27:34<09:36,  1.14it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/lake/Lake/Util/Name.lean
+ 72%|██████████▊    | 1611/2235 [27:59<08:12,  1.27it/s]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/lake/Lake/CLI/Translate/Lean.lean
+ 93%|█████████████▉ | 2080/2235 [44:59<03:42,  1.44s/it]WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Tactic/BVDecide/Bitblast/BVExpr/Circuit/Lemmas/Operations/Udiv.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Tactic/BVDecide/Bitblast/BVExpr/Circuit/Lemmas/Operations/Umod.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/DHashMap/IteratorLemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/DHashMap/Raw.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/DHashMap/RawLemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/DHashMap/Internal/AssocList/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/DHashMap/Internal/WF.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/DHashMap/Internal/Raw.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/DHashMap/Internal/RawLemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/DHashMap/Internal/Model.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/DHashMap/Basic.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/DHashMap/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/Iterators/Lemmas/Producers/Slice.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/HashMap/IteratorLemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/HashMap/RawLemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/HashMap/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/DTreeMap/Internal/WF/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/ExtHashMap/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/ExtDHashMap/Basic.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/ExtDHashMap/Lemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/HashSet/IteratorLemmas.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Data/Internal/List/Associative.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Time/Date/PlainDate.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Time/Date/ValidDate.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Time/Zoned/ZonedDateTime.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Time/Zoned/DateTime.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Time/DateTime.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Time/Format.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/lean4/src/lean/Std/Do/WP/Monad.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/importGraph/ImportGraph/Cli.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/importGraph/ImportGraph.lean
+WARNING: Failed to process /tmp/tmpzkgdedp7/MyNNG/.lake/packages/importGraph/Main.lean
+2026-02-12 12:54:23.963 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Control/OptionT.dep_paths
+2026-02-12 12:54:23.970 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/runLinter.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Lean/EStateM.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Control/OptionT.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Lean/LawfulMonadLift.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Data/ByteSlice.dep_paths
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Data/ByteSlice.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/importGraph/.lake/build/ir/ImportGraph/Cli.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/WF.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Control/LawfulMonadState.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Data/Array/Monadic.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Control/AlternativeMonad.dep_paths
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Data/String/Lemmas.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/WF.dep_paths
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Lean/Meta/Simp.dep_paths
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Control/LawfulMonadState.dep_paths
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Data/Nat/Digits.dep_paths
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Lean/Meta/Simp.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/runLinter.dep_paths
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Tactic/Lint/Simp.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Data/String/Lemmas.dep_paths
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/importGraph/.lake/build/ir/ImportGraph.dep_paths
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/importGraph/.lake/build/ir/ImportGraph.ast.json
+2026-02-12 12:54:23.971 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Control/Lemmas.ast.json
+2026-02-12 12:54:23.972 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Data/Nat/Digits.ast.json
+2026-02-12 12:54:23.972 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/importGraph/.lake/build/ir/Main.dep_paths
+2026-02-12 12:54:23.972 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Lean/LawfulMonadLift.dep_paths
+2026-02-12 12:54:23.972 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/importGraph/.lake/build/ir/Main.ast.json
+2026-02-12 12:54:23.972 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/importGraph/.lake/build/ir/ImportGraph/Cli.dep_paths
+2026-02-12 12:54:23.972 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Control/Lemmas.dep_paths
+2026-02-12 12:54:23.972 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Control/AlternativeMonad.ast.json
+2026-02-12 12:54:23.972 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Tactic/Lint/Simp.dep_paths
+2026-02-12 12:54:23.972 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Data/Array/Monadic.dep_paths
+2026-02-12 12:54:23.972 | WARNING  | lean_dojo_v2.lean_dojo.data_extraction.trace:check_files:137 - Missing /tmp/tmpzkgdedp7/MyNNG/.lake/packages/batteries/.lake/build/ir/Batteries/Lean/EStateM.dep_paths
+2026-02-12 12:54:24.058 | DEBUG    | lean_dojo_v2.lean_dojo.data_extraction.traced_data:from_traced_files:1081 - Parsing 2081 *.ast.json files in /tmp/tmpzkgdedp7/MyNNG with 3 workers
+  1%|▎                | 31/2081 [00:02<02:22, 14.34it/s]
+Traceback (most recent call last):
+  File "/home/lilixing/Lean-Graph-Analysis/experiments/MyNNG/test_build_graph.py", line 79, in <module>
+    graph = main()
+            ^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/experiments/MyNNG/test_build_graph.py", line 28, in main
+    traced_repo = trace(repo)
+                  ^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/trace.py", line 253, in trace
+    cached_path = get_traced_repo_path(repo, build_deps)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/trace.py", line 221, in get_traced_repo_path
+    traced_repo = TracedRepo.from_traced_files(src_dir, build_deps)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/traced_data.py", line 1086, in from_traced_files
+    TracedFile.from_traced_file(root_dir, path, repo)
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/traced_data.py", line 520, in from_traced_file
+    return cls._from_lean4_traced_file(root_dir, json_path, repo)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/traced_data.py", line 540, in _from_lean4_traced_file
+    ast = FileNode.from_data(data, lean_file)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 255, in from_data
+    node = Node.from_data(node_data, lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 29, in from_data
+    return subcls.from_data(node_data, lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 482, in from_data
+    children = _parse_children(node_data, lean_file)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 269, in _parse_children
+    node = Node.from_data(d["node"], lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 29, in from_data
+    return subcls.from_data(node_data, lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 546, in from_data
+    children = _parse_children(node_data, lean_file)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 269, in _parse_children
+    node = Node.from_data(d["node"], lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 29, in from_data
+    return subcls.from_data(node_data, lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 603, in from_data
+    children = _parse_children(node_data, lean_file)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 269, in _parse_children
+    node = Node.from_data(d["node"], lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 29, in from_data
+    return subcls.from_data(node_data, lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 1441, in from_data
+    children = _parse_children(node_data, lean_file)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 269, in _parse_children
+    node = Node.from_data(d["node"], lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 29, in from_data
+    return subcls.from_data(node_data, lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 1563, in from_data
+    children = _parse_children(node_data, lean_file)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 269, in _parse_children
+    node = Node.from_data(d["node"], lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 29, in from_data
+    return subcls.from_data(node_data, lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 603, in from_data
+    children = _parse_children(node_data, lean_file)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 269, in _parse_children
+    node = Node.from_data(d["node"], lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 29, in from_data
+    return subcls.from_data(node_data, lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 1563, in from_data
+    children = _parse_children(node_data, lean_file)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 269, in _parse_children
+    node = Node.from_data(d["node"], lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 29, in from_data
+    return subcls.from_data(node_data, lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 603, in from_data
+    children = _parse_children(node_data, lean_file)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 269, in _parse_children
+    node = Node.from_data(d["node"], lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 29, in from_data
+    return subcls.from_data(node_data, lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 1563, in from_data
+    children = _parse_children(node_data, lean_file)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 271, in _parse_children
+    node = AtomNode.from_data(d["atom"], lean_file)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 155, in from_data
+    start, end = _parse_pos(info, lean_file)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lilixing/Lean-Graph-Analysis/.venv/lib/python3.12/site-packages/lean_dojo_v2/lean_dojo/data_extraction/ast.py", line 134, in _parse_pos
+    "synthetic" in info
+AssertionError
+```

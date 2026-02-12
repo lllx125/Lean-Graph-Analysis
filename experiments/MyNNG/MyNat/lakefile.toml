@@ -1,0 +1,10 @@
+name = "MyNat"
+version = "0.1.0"
+defaultTargets = ["mynat"]
+
+[[lean_lib]]
+name = "MyNat"
+
+[[lean_exe]]
+name = "mynat"
+root = "Main"
