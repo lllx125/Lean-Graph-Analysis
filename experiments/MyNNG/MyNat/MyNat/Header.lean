@@ -1,4 +1,3 @@
-
 -- definition
 inductive MyNat where
 | zero : MyNat
@@ -23,8 +22,8 @@ def pred : MyNat → MyNat
 
 theorem pred_succ (n : MyNat) : pred (succ n) = n := rfl
 
-theorem succ_inj (a b : MyNat) (h : succ a = succ b) : a = b := by
-  rw [← pred_succ a, h, pred_succ]
+theorem succ_inj (a b : MyNat) (h : succ a = succ b) : a = b :=
+  congrArg pred h
 
 def is_zero : MyNat → Prop
 | zero => True
@@ -33,12 +32,8 @@ def is_zero : MyNat → Prop
 theorem is_zero_zero : is_zero zero = True := rfl
 theorem is_zero_succ (n : MyNat) : is_zero (succ n) = False := rfl
 
-theorem zero_ne_succ (a : MyNat) : zero ≠ succ a := by
-  intro h
-  rw [← is_zero_succ a]
-  rw [← h]
-  rw [is_zero_zero]
-  trivial
+theorem zero_ne_succ (a : MyNat) : zero ≠ succ a :=
+  fun h => Eq.subst h (motive := is_zero) True.intro
 
 -- multiplication
 opaque mul : MyNat → MyNat → MyNat
@@ -53,10 +48,10 @@ def two : MyNat := MyNat.succ one
 def three : MyNat := MyNat.succ two
 def four : MyNat := MyNat.succ three
 
-theorem one_eq_succ_zero : one = succ zero := by rfl
-theorem two_eq_succ_one : two = succ one := by rfl
-theorem three_eq_succ_two : three = succ two := by rfl
-theorem four_eq_succ_three : four = succ three := by rfl
+theorem one_eq_succ_zero : one = succ zero := rfl
+theorem two_eq_succ_one : two = succ one := rfl
+theorem three_eq_succ_two : three = succ two := rfl
+theorem four_eq_succ_three : four = succ three := rfl
 
 -- power
 opaque pow : MyNat → MyNat → MyNat

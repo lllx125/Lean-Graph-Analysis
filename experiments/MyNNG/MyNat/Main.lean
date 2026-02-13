@@ -1,4 +1,4 @@
-import MyNat
+import MyNat.Basic
 
 def main : IO Unit :=
-  IO.println s!"Hello, {hello}!"
+  IO.println "MyNat library compiled successfully!"

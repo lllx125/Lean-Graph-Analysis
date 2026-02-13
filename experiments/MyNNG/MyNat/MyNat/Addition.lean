@@ -1,4 +1,4 @@
-import MyNNG.Header
+import MyNat.Header
 
 open MyNat
 

@@ -1,4 +1,4 @@
-import MyNNG.Addition
+import MyNat.Addition
 
 open MyNat
 

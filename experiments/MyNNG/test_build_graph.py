@@ -1,5 +1,5 @@
 """
-Test script to build a dependency graph from MyNNG using lean_graph_analysor package.
+Test script to build a dependency graph from MyNat using lean_graph_analysor package.
 """
 
 from pathlib import Path
@@ -11,17 +11,17 @@ from lean_dojo_v2.lean_dojo.data_extraction.trace import trace
 from lean_graph_analyser.graph_generator import GraphGenerator
 
 def main():
-    """Build and analyze the MyNNG dependency graph."""
+    """Build and analyze the MyNat dependency graph."""
 
-    # Path to the MyNNG Lean project
-    mynng_path = Path(__file__).parent / "MyNNG"
+    # Path to the MyNat Lean project
+    MyNat_path = Path(__file__).parent / "MyNat"
 
-    print(f"Building dependency graph for MyNNG project at: {mynng_path}")
+    print(f"Building dependency graph for MyNat project at: {MyNat_path}")
     print("=" * 70)
 
     # Step 1: Create a LeanGitRepo from the local path
     print("\nStep 1: Creating LeanGitRepo from local path...")
-    repo = LeanGitRepo.from_path(mynng_path)
+    repo = LeanGitRepo.from_path(MyNat_path)
 
     # Step 2: Trace the repository to extract AST and dependency information
     print("\nStep 2: Tracing the repository (this may take a while)...")
@@ -33,7 +33,7 @@ def main():
 
     # Step 3: Create a GraphGenerator instance
     print("\nStep 3: Initializing GraphGenerator...")
-    graph_location = Path(__file__).parent / "graphs" / "mynng_dependency_graph.graphml"
+    graph_location = Path(__file__).parent / "graphs" / "MyNat_dependency_graph.graphml"
 
     generator = GraphGenerator(
         traced_repo=traced_repo,
