@@ -1,0 +1,10 @@
+name = "LambdaNat"
+version = "0.1.0"
+defaultTargets = ["lambdanat"]
+
+[[lean_lib]]
+name = "LambdaNat"
+
+[[lean_exe]]
+name = "lambdanat"
+root = "Main"
