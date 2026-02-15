@@ -9,6 +9,7 @@ load_dotenv()
 from lean_dojo_v2.lean_dojo.data_extraction.lean import LeanGitRepo
 from lean_dojo_v2.lean_dojo.data_extraction.trace import trace
 from lean_graph_analyser.graph_generator import GraphGenerator
+from lean_graph_analyser.utils.plot_graph import plot_graph
 
 def main():
     """Build and analyze the MyNat dependency graph."""
@@ -25,7 +26,7 @@ def main():
 
     # Step 2: Trace the repository to extract AST and dependency information
     print("\nStep 2: Tracing the repository (this may take a while)...")
-    traced_repo = trace(repo)
+    traced_repo = trace(repo, build_deps=False)
 
     print(f"Repository traced successfully!")
     print(f"   - Repository name: {traced_repo.name}")
@@ -57,7 +58,7 @@ def main():
     if graph.vcount() > 0:
         print("\nSample nodes (first 5):")
         for i, v in enumerate(graph.vs[:5]):
-            print(f"   {i+1}. {v['name']} ({v['kind']}) in {Path(v['file']).name}")
+            print(f"   {i+1}. {v['name']} ({v['kind']}) in {Path(v['file_path']).name}")
 
     # Display node type distribution
     print("\nNode type distribution:")
@@ -72,6 +73,14 @@ def main():
     print("\nGraph generation complete!")
     print(f"Graph saved to: {graph_location}")
     print("\nYou can now use this graph for further analysis.")
+
+    # Step 6: Visualize the graph
+    print("\n" + "=" * 70)
+    print("Step 5: Visualizing the graph...")
+    print("=" * 70)
+
+    visualization_output = Path(__file__).parent / "graphs" / "MyNat_visualization.html"
+    plot_graph(graph, output_file=str(visualization_output), dark_mode=True)
 
     return graph
 
